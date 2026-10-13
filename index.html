@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>The Selection Blueprint | CountryEdu Career Development Seminar</title>
+  <meta
+    name="description"
+    content="Understand what makes a candidate standout. Join the CountryEdu career development seminar on 24 October 2026 to master skills, mindset, impact, and culture fit."
+  />
+  <meta name="theme-color" content="#06110F" />
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- =========================================================
+       HOLOGRAPHIC FORESTGREEN LAVA BACKGROUND TEXTURE
+       ========================================================= -->
+  <div class="holographic-lava-bg-wrap" id="holographicLavaWrapper" aria-hidden="true">
+    <canvas id="holographicLavaCanvas"></canvas>
+    <div class="lava-texture-overlay"></div>
+  </div>
+
+  <!-- =========================================================
+       SECTION 1: INFINITE ANNOUNCEMENT TICKER
+       ========================================================= -->
+  <aside class="ticker-bar" aria-label="Seminar announcements">
+    <div class="ticker-track">
+      <div class="ticker-content">
+        <span class="ticker-item"><span class="ticker-bullet">✦</span> CAREER DEVELOPMENT SEMINAR</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item"><span class="ticker-bullet">★</span> THE SELECTION BLUEPRINT</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item"><span class="ticker-bullet">✦</span> UNDERSTAND WHAT EMPLOYERS LOOK FOR</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item"><span class="ticker-badge">DATE</span> 24 OCTOBER 2026</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item"><span class="ticker-badge">TIME</span> 5:00 PM</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item"><span class="ticker-bullet">⚡</span> REGISTRATION OPEN</span>
+        <span class="ticker-sep">•</span>
+      </div>
+      <!-- Duplicate for seamless infinite loop -->
+      <div class="ticker-content" aria-hidden="true">
+        <span class="ticker-item"><span class="ticker-bullet">✦</span> CAREER DEVELOPMENT SEMINAR</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item"><span class="ticker-bullet">★</span> THE SELECTION BLUEPRINT</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item"><span class="ticker-bullet">✦</span> UNDERSTAND WHAT EMPLOYERS LOOK FOR</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item"><span class="ticker-badge">DATE</span> 24 OCTOBER 2026</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item"><span class="ticker-badge">TIME</span> 5:00 PM</span>
+        <span class="ticker-sep">•</span>
+        <span class="ticker-item"><span class="ticker-bullet">⚡</span> REGISTRATION OPEN</span>
+        <span class="ticker-sep">•</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================
+       SECTION 2: NAVIGATION BAR
+       ========================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand nav-brand" aria-label="CountryEdu Home">
+        <img
+          src="assets/countryedu-logo.png"
+          alt="CountryEdu - Online Education & Programs"
+          class="brand-logo-img"
+          width="190"
+          height="42"
+        />
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#framework" class="nav-link">Selection Criteria</a></li>
+          <li><a href="#learn" class="nav-link">What You'll Learn</a></li>
+          <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+          <li><a href="#faqs" class="nav-link">FAQs</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#register" class="btn btn-primary nav-cta">
+            <span>Register Now</span>
+            <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3.33 8h9.34M8.67 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- =========================================================
+         SECTION 3: HERO SECTION
+         ========================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-glow glow-1" aria-hidden="true"></div>
+      <div class="hero-bg-glow glow-2" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span class="eyebrow-text">CAREER READINESS • CANDIDATE SELECTION</span>
+          </div>
+
+          <h1 class="hero-title">
+            The Selection <span class="gold-gradient">Blueprint</span>
+          </h1>
+
+          <p class="hero-highlight">
+            Understand What Makes a Candidate Standout.
+          </p>
+
+          <p class="hero-description">
+            Discover the qualities, skills, mindset, and professional behaviours that help candidates make a stronger impression during the hiring process. Learn how to communicate your value and prepare for career opportunities with confidence.
+          </p>
+
+          <div class="hero-meta-bar">
+            <!-- 1. Event Date -->
+            <div class="meta-item">
+              <div class="meta-icon-circle">
+                <svg class="meta-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <rect x="3" y="4" width="14" height="13" rx="2" stroke="#82cf95" stroke-width="1.6"/>
+                  <path d="M3 8h14M7 2v4M13 2v4" stroke="#82cf95" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="meta-info">
+                <span class="meta-label">Event Date</span>
+                <span class="meta-value">24 October 2026</span>
+              </div>
+            </div>
+
+            <div class="meta-divider" aria-hidden="true"></div>
+
+            <!-- 2. Timing -->
+            <div class="meta-item">
+              <div class="meta-icon-circle">
+                <svg class="meta-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <circle cx="10" cy="10" r="7" stroke="#82cf95" stroke-width="1.6"/>
+                  <path d="M10 6v4l2.5 1.5" stroke="#82cf95" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="meta-info">
+                <span class="meta-label">Timing</span>
+                <span class="meta-value">5:00 PM</span>
+              </div>
+            </div>
+
+            <div class="meta-divider" aria-hidden="true"></div>
+
+            <!-- 3. Format -->
+            <div class="meta-item">
+              <div class="meta-icon-circle">
+                <svg class="meta-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <rect x="2.5" y="4" width="15" height="10" rx="2" stroke="#82cf95" stroke-width="1.6"/>
+                  <path d="M7 17h6M10 14v3" stroke="#82cf95" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="meta-info">
+                <span class="meta-label">Format</span>
+                <span class="meta-value">Interactive Masterclass</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#register" class="btn btn-primary hero-btn-main">
+              <span>Register for the Seminar</span>
+              <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3.33 8h9.34M8.67 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#learn" class="btn btn-secondary hero-btn-sub">
+              <span>Explore What You'll Learn</span>
+              <svg class="icon-down" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 3.33v9.34M4 8.67l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Column (Provided Image) -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-image-card">
+            <div class="card-glass-frame">
+              <img
+                src="assets/selection-blueprint.png"
+                alt="The Selection Blueprint seminar presentation showing candidate standout criteria: Skills & Potential, Mindset & Growth, Impact & Value, Culture & Fit"
+                class="hero-img"
+                width="1600"
+                height="1067"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="hero-image-caption">
+              <div class="caption-pulse"></div>
+              <span>Official Seminar Keynote Artwork &bull; CountryEdu Presentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 4: WHY CANDIDATE SELECTION MATTERS
+         ========================================================= -->
+    <section class="section section-dark" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">THE RECRUITMENT REALITY</span>
+          <h2 class="section-title">Why Being Qualified Isn't Always Enough</h2>
+          <div class="gold-line"></div>
+          <p class="section-lead">
+            Strong candidates demonstrate more than academic knowledge. They communicate their value, show adaptability, and understand how their skills contribute to a team.
+          </p>
+        </div>
+
+        <div class="grid grid-3 why-cards">
+          <!-- Card 1 -->
+          <article class="feature-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 32 32" fill="none" class="card-icon" aria-hidden="true">
+                <rect x="6" y="4" width="20" height="24" rx="2" stroke="#82cf95" stroke-width="2"/>
+                <path d="M11 10h10M11 15h10M11 20h6" stroke="#82cf95" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="21" cy="21" r="5" fill="#10251E" stroke="#82cf95" stroke-width="2"/>
+                <path d="M21 19v4M19 21h4" stroke="#82cf95" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Beyond the Resume</h3>
+            <p class="card-desc">
+              Degrees and certificates get your resume seen, but standout candidates articulate the hands-on story behind their accomplishments—connecting projects directly to company challenges.
+            </p>
+            <div class="card-footer-tag">Narrative & Evidence</div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="feature-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 32 32" fill="none" class="card-icon" aria-hidden="true">
+                <path d="M8 24V9a2 2 0 012-2h12a2 2 0 012 2v15l-8-4-8 4z" stroke="#82cf95" stroke-width="2"/>
+                <path d="M13 13h6M13 17h4" stroke="#82cf95" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="24" cy="9" r="3" fill="#82cf95"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Confidence & Communication</h3>
+            <p class="card-desc">
+              Interviews are conversations, not interrogations. Learn the crucial art of articulating complex ideas simply, listening actively, and projecting executive poise under pressure.
+            </p>
+            <div class="card-footer-tag">Poise & Clarity</div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="feature-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 32 32" fill="none" class="card-icon" aria-hidden="true">
+                <circle cx="16" cy="16" r="11" stroke="#82cf95" stroke-width="2"/>
+                <path d="M16 10v6l4 3" stroke="#82cf95" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 6l3 3M25 6l-3 3" stroke="#82cf95" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Professional Readiness</h3>
+            <p class="card-desc">
+              Preparation goes beyond memorizing answers. Employers seek candidates who grasp commercial expectations, embrace constructive feedback, and demonstrate day-one adaptability.
+            </p>
+            <div class="card-footer-tag">Workplace Alignment</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 5: THE CANDIDATE SELECTION FRAMEWORK
+         ========================================================= -->
+    <section class="section section-framework" id="framework">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">FOUR PILLARS OF EXCELLENCE</span>
+          <h2 class="section-title">What Makes a Candidate Stand Out?</h2>
+          <div class="gold-line"></div>
+          <p class="section-lead">
+            The four foundational dimensions featured on our keynote screen. These evaluation lenses reflect modern employer priorities while recognizing that every team values varied, authentic styles.
+          </p>
+        </div>
+
+        <div class="fc-flow" role="group" aria-label="Flowchart: a candidate is assessed across four pillars (Skills and Potential, Mindset and Growth, Impact and Value, Culture and Fit) which together make them stand out">
+          <div class="fc-node fc-terminal fc-start">
+            <span class="fc-terminal-label">Start</span>
+            <strong>Candidate enters the selection process</strong>
+          </div>
+          <span class="fc-arrow" aria-hidden="true"></span>
+          <div class="fc-split-label">Evaluated across four pillars</div>
+
+          <div class="fc-branches">
+          <div class="fc-branch">
+            <span class="fc-arrow fc-arrow-in" aria-hidden="true"></span>
+            <div class="fc-node fc-pillar">
+              <div class="fc-pillar-head">
+                <span class="pillar-num">01</span>
+                <div class="pillar-icon-wrap">
+                  <svg viewBox="0 0 28 28" fill="none" class="pillar-icon" aria-hidden="true">
+                  <circle cx="14" cy="14" r="11" stroke="#82cf95" stroke-width="1.8"/>
+                  <circle cx="14" cy="14" r="7" stroke="#82cf95" stroke-width="1.8"/>
+                  <circle cx="14" cy="14" r="2.5" fill="#82cf95"/>
+                  <path d="M14 2v4M14 22v4M2 14h4M22 14h4" stroke="#82cf95" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+                </div>
+              </div>
+              <h3 class="pillar-title">Skills & Potential</h3>
+              <p class="fc-pillar-desc">Relevant technical abilities, solid problem-solving fundamentals, high coachability, and proven readiness to rapidly master new domain tools.</p>
+            </div>
+              <span class="fc-arrow" aria-hidden="true"></span>
+              <div class="fc-node fc-point">Demonstrated capability</div>
+              <span class="fc-arrow" aria-hidden="true"></span>
+              <div class="fc-node fc-point">Core problem decomposition</div>
+              <span class="fc-arrow" aria-hidden="true"></span>
+              <div class="fc-node fc-point">Fast learning agility</div>
+            <span class="fc-line fc-line-out" aria-hidden="true"></span>
+          </div>
+          <div class="fc-branch">
+            <span class="fc-arrow fc-arrow-in" aria-hidden="true"></span>
+            <div class="fc-node fc-pillar">
+              <div class="fc-pillar-head">
+                <span class="pillar-num">02</span>
+                <div class="pillar-icon-wrap">
+                  <svg viewBox="0 0 28 28" fill="none" class="pillar-icon" aria-hidden="true">
+                  <path d="M10 5a5 5 0 00-5 5c0 1.5.7 2.8 1.7 3.7A5 5 0 006 18a5 5 0 005 5h1V5h-2z" stroke="#82cf95" stroke-width="1.8"/>
+                  <path d="M18 5a5 5 0 015 5c0 1.5-.7 2.8-1.7 3.7A5 5 0 0122 18a5 5 0 01-5 5h-1V5h2z" stroke="#82cf95" stroke-width="1.8"/>
+                  <path d="M10 12h4M14 16h4" stroke="#82cf95" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+                </div>
+              </div>
+              <h3 class="pillar-title">Mindset & Growth</h3>
+              <p class="fc-pillar-desc">Intellectual curiosity, emotional resilience in the face of setbacks, adaptability to shifting goals, and proactive openness to critique.</p>
+            </div>
+              <span class="fc-arrow" aria-hidden="true"></span>
+              <div class="fc-node fc-point">Curiosity & resourcefulness</div>
+              <span class="fc-arrow" aria-hidden="true"></span>
+              <div class="fc-node fc-point">Resilience under ambiguity</div>
+              <span class="fc-arrow" aria-hidden="true"></span>
+              <div class="fc-node fc-point">Receptive to feedback</div>
+            <span class="fc-line fc-line-out" aria-hidden="true"></span>
+          </div>
+          <div class="fc-branch">
+            <span class="fc-arrow fc-arrow-in" aria-hidden="true"></span>
+            <div class="fc-node fc-pillar">
+              <div class="fc-pillar-head">
+                <span class="pillar-num">03</span>
+                <div class="pillar-icon-wrap">
+                  <svg viewBox="0 0 28 28" fill="none" class="pillar-icon" aria-hidden="true">
+                  <path d="M14 3l3.5 7.2 7.9 1.1-5.7 5.6 1.4 7.9L14 21l-7.1 3.8 1.4-7.9-5.7-5.6 7.9-1.1L14 3z" stroke="#82cf95" stroke-width="1.8" stroke-linejoin="round"/>
+                  <circle cx="14" cy="14" r="2" fill="#82cf95"/>
+                </svg>
+                </div>
+              </div>
+              <h3 class="pillar-title">Impact & Value</h3>
+              <p class="fc-pillar-desc">The ability to translate theoretical knowledge into tangible team outcomes, solve realistic business bottlenecks, and communicate measurable results.</p>
+            </div>
+              <span class="fc-arrow" aria-hidden="true"></span>
+              <div class="fc-node fc-point">Value-driven contributions</div>
+              <span class="fc-arrow" aria-hidden="true"></span>
+              <div class="fc-node fc-point">Outcome orientation</div>
+              <span class="fc-arrow" aria-hidden="true"></span>
+              <div class="fc-node fc-point">Quantifiable storytelling</div>
+            <span class="fc-line fc-line-out" aria-hidden="true"></span>
+          </div>
+          <div class="fc-branch">
+            <span class="fc-arrow fc-arrow-in" aria-hidden="true"></span>
+            <div class="fc-node fc-pillar">
+              <div class="fc-pillar-head">
+                <span class="pillar-num">04</span>
+                <div class="pillar-icon-wrap">
+                  <svg viewBox="0 0 28 28" fill="none" class="pillar-icon" aria-hidden="true">
+                  <circle cx="14" cy="9" r="4" stroke="#82cf95" stroke-width="1.8"/>
+                  <path d="M7 23c0-3.9 3.1-7 7-7s7 3.1 7 7" stroke="#82cf95" stroke-width="1.8" stroke-linecap="round"/>
+                  <circle cx="22" cy="10" r="2.5" stroke="#82cf95" stroke-width="1.4"/>
+                  <path d="M21 19c2-.4 3.5-1.5 3.5-3" stroke="#82cf95" stroke-width="1.4" stroke-linecap="round"/>
+                </svg>
+                </div>
+              </div>
+              <h3 class="pillar-title">Culture & Fit</h3>
+              <p class="fc-pillar-desc">Collaborative teamwork, respectful workplace communication, professional ethics, and authentic alignment with team dynamics and operational rhythms.</p>
+            </div>
+              <span class="fc-arrow" aria-hidden="true"></span>
+              <div class="fc-node fc-point">Empathetic collaboration</div>
+              <span class="fc-arrow" aria-hidden="true"></span>
+              <div class="fc-node fc-point">Professional etiquette</div>
+              <span class="fc-arrow" aria-hidden="true"></span>
+              <div class="fc-node fc-point">Role & team synergy</div>
+            <span class="fc-line fc-line-out" aria-hidden="true"></span>
+          </div>
+          </div>
+
+          <span class="fc-arrow fc-arrow-merge" aria-hidden="true"></span>
+          <div class="fc-node fc-terminal fc-end">
+            <span class="fc-terminal-label">Outcome</span>
+            <strong>Candidate stands out</strong>
+          </div>
+        </div>
+
+        <div class="framework-disclaimer">
+          <svg class="disclaimer-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <circle cx="8" cy="8" r="7" stroke="#82cf95" stroke-width="1.4"/>
+            <path d="M8 7v4M8 5v.5" stroke="#82cf95" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+          <p>
+            <em>Note on recruitment practice:</em> Candidate standout dimensions represent broad professional competencies rather than rigid hiring dogmas. Different organizations and teams prioritize varying strengths across these four areas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 6: WHAT YOU'LL LEARN
+         ========================================================= -->
+    <section class="section section-dark" id="learn">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">CURRICULUM MODULES</span>
+          <h2 class="section-title">Build the Skills Behind a Strong First Impression</h2>
+          <div class="gold-line"></div>
+          <p class="section-lead">
+            Every session topic delivers actionable techniques to turn your academic training into confident professional presentation.
+          </p>
+        </div>
+
+        <div class="grid grid-3 learn-grid">
+          <!-- 1. Resume and Profile -->
+          <div class="learn-card">
+            <div class="learn-icon-row">
+              <div class="learn-badge">Module 01</div>
+              <svg class="learn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="3" stroke="#82cf95" stroke-width="1.8"/>
+                <path d="M7 8h10M7 12h7M7 16h4" stroke="#82cf95" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="learn-title">Resume & Profile Presentation</h3>
+            <p class="learn-text">
+              Turn duty lists into high-impact accomplishment bullets and structure CV and LinkedIn profiles around measurable outcomes.
+            </p>
+          </div>
+
+          <!-- 2. Interview Preparation -->
+          <div class="learn-card">
+            <div class="learn-icon-row">
+              <div class="learn-badge">Module 02</div>
+              <svg class="learn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 6h16M4 12h16M4 18h9" stroke="#82cf95" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="18" cy="18" r="3" stroke="#82cf95" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <h3 class="learn-title">Interview Preparation</h3>
+            <p class="learn-text">
+              Research companies and interview formats, then ask strategic questions that show genuine interest and preparedness.
+            </p>
+          </div>
+
+          <!-- 3. Professional Communication -->
+          <div class="learn-card">
+            <div class="learn-icon-row">
+              <div class="learn-badge">Module 03</div>
+              <svg class="learn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="#82cf95" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <h3 class="learn-title">Professional Communication</h3>
+            <p class="learn-text">
+              Refine your tone, pacing, body language, and virtual presence with concise speaking structures that keep interviewers engaged.
+            </p>
+          </div>
+
+          <!-- 4. Strengths & Transferable Skills -->
+          <div class="learn-card">
+            <div class="learn-icon-row">
+              <div class="learn-badge">Module 04</div>
+              <svg class="learn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke="#82cf95" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <h3 class="learn-title">Strengths & Transferable Skills</h3>
+            <p class="learn-text">
+              Identify your signature strengths and link coursework, leadership roles, and background to real workplace problems.
+            </p>
+          </div>
+
+          <!-- 5. Answering Behavioural Questions -->
+          <div class="learn-card">
+            <div class="learn-icon-row">
+              <div class="learn-badge">Module 05</div>
+              <svg class="learn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" stroke="#82cf95" stroke-width="1.8"/>
+                <path d="M12 8v4l3 3" stroke="#82cf95" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="learn-title">Answering Behavioural Questions</h3>
+            <p class="learn-text">
+              Use the STAR framework (Situation, Task, Action, Result) to answer tough situational and conflict-resolution questions.
+            </p>
+          </div>
+
+          <!-- 6. Demonstrating Projects & Achievements -->
+          <div class="learn-card">
+            <div class="learn-icon-row">
+              <div class="learn-badge">Module 06</div>
+              <svg class="learn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z" stroke="#82cf95" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <h3 class="learn-title">Demonstrating Projects & Impact</h3>
+            <p class="learn-text">
+              Walk evaluators through case studies, code repos, and capstone work, explaining your reasoning, trade-offs, and value.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 7: THE CANDIDATE PREPARATION ROADMAP
+         ========================================================= -->
+    <section class="section section-roadmap" id="roadmap">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">STEP-BY-STEP PROGRESSION</span>
+          <h2 class="section-title">From Preparation to Presentation</h2>
+          <div class="gold-line"></div>
+          <p class="section-lead">
+            A continuous career development journey designed to take you from self-assessment to memorable interview delivery.
+          </p>
+        </div>
+
+        <div class="roadmap-timeline" aria-label="5-stage roadmap timeline">
+          <div class="timeline-line-bg" aria-hidden="true"></div>
+          <div class="timeline-line-progress" id="roadmapProgress" aria-hidden="true"></div>
+
+          <!-- Step 1 -->
+          <div class="roadmap-milestone" data-step="1">
+            <div class="milestone-marker">
+              <span class="milestone-num">1</span>
+            </div>
+            <div class="milestone-content">
+              <span class="milestone-tag">Stage 01</span>
+              <h3 class="milestone-title">Discover</h3>
+              <p class="milestone-summary">Identify your skills & strengths</p>
+              <p class="milestone-text">
+                Conduct a rigorous self-audit to identify your authentic technical capabilities, interpersonal strengths, and career aspirations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="roadmap-milestone" data-step="2">
+            <div class="milestone-marker">
+              <span class="milestone-num">2</span>
+            </div>
+            <div class="milestone-content">
+              <span class="milestone-tag">Stage 02</span>
+              <h3 class="milestone-title">Prepare</h3>
+              <p class="milestone-summary">Organize examples & relevant experiences</p>
+              <p class="milestone-text">
+                Curate a targeted bank of stories, project evidence, and quantifiable metrics that illustrate your problem-solving process.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="roadmap-milestone" data-step="3">
+            <div class="milestone-marker">
+              <span class="milestone-num">3</span>
+            </div>
+            <div class="milestone-content">
+              <span class="milestone-tag">Stage 03</span>
+              <h3 class="milestone-title">Communicate</h3>
+              <p class="milestone-summary">Explain your value clearly</p>
+              <p class="milestone-text">
+                Distill complex jargon into compelling, business-relevant explanations that speak directly to what interviewers evaluate.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="roadmap-milestone" data-step="4">
+            <div class="milestone-marker">
+              <span class="milestone-num">4</span>
+            </div>
+            <div class="milestone-content">
+              <span class="milestone-tag">Stage 04</span>
+              <h3 class="milestone-title">Demonstrate</h3>
+              <p class="milestone-summary">Show how you approach real problems</p>
+              <p class="milestone-text">
+                Walk through scenarios with structured thinking, collaborative demeanor, and clear articulation of critical decision trade-offs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="roadmap-milestone" data-step="5">
+            <div class="milestone-marker">
+              <span class="milestone-num">5</span>
+            </div>
+            <div class="milestone-content">
+              <span class="milestone-tag">Stage 05</span>
+              <h3 class="milestone-title">Improve</h3>
+              <p class="milestone-summary">Learn from feedback & refine</p>
+              <p class="milestone-text">
+                Synthesize post-interview observations, identify growth areas, and continuously sharpen your professional presence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 8: SEMINAR DETAILS AND LAUNCH OFFER CTA
+         ========================================================= -->
+    <section class="section section-details" id="register">
+      <div class="container">
+        <div class="pricing-offer-card">
+          <!-- Top Pill Badge -->
+          <div class="offer-pill-badge-wrap">
+            <span class="offer-pill-badge">LIMITED TIME LAUNCH OFFER</span>
+          </div>
+
+          <!-- Title & Subtitle -->
+          <h2 class="offer-card-title">THE SELECTION BLUEPRINT</h2>
+          <p class="offer-card-subtitle">LIVE CAREER SEMINAR</p>
+
+          <!-- Price Display Row -->
+          <div class="offer-price-row">
+            <span class="old-price" aria-label="Original price Rupees 1,999">₹1,999</span>
+            <span class="new-price" aria-label="Discounted price Rupees 999">₹999</span>
+          </div>
+
+          <!-- Schedule Pill -->
+          <div class="offer-schedule-pill">
+            <svg class="schedule-calendar-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <rect x="3" y="4" width="14" height="13" rx="2" stroke="#82cf95" stroke-width="1.6"/>
+              <path d="M3 8h14M7 2v4M13 2v4" stroke="#82cf95" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            <span>24 OCT 2026 &bull; 5:00 PM IST &bull; Live Online</span>
+          </div>
+
+          <!-- Live Countdown Timer Box -->
+          <div class="countdown-timer-box" aria-label="Seminar countdown timer">
+            <div class="timer-unit">
+              <span class="timer-val" id="timerDays">00</span>
+              <span class="timer-lbl">DAYS</span>
+            </div>
+            <div class="timer-divider" aria-hidden="true">:</div>
+            <div class="timer-unit">
+              <span class="timer-val" id="timerHours">00</span>
+              <span class="timer-lbl">HOURS</span>
+            </div>
+            <div class="timer-divider" aria-hidden="true">:</div>
+            <div class="timer-unit">
+              <span class="timer-val" id="timerMins">00</span>
+              <span class="timer-lbl">MINS</span>
+            </div>
+            <div class="timer-divider" aria-hidden="true">:</div>
+            <div class="timer-unit">
+              <span class="timer-val" id="timerSecs">00</span>
+              <span class="timer-lbl">SECS</span>
+            </div>
+          </div>
+
+          <!-- Checklist Grid (2 Columns matching reference) -->
+          <div class="offer-checklist-grid">
+            <div class="checklist-col">
+              <div class="checklist-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8.5l3.5 3.5 6.5-7" stroke="#82cf95" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Live interactive workshop access</span>
+              </div>
+              <div class="checklist-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8.5l3.5 3.5 6.5-7" stroke="#82cf95" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Professional identity guidance</span>
+              </div>
+              <div class="checklist-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8.5l3.5 3.5 6.5-7" stroke="#82cf95" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Workplace-readiness insights</span>
+              </div>
+              <div class="checklist-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8.5l3.5 3.5 6.5-7" stroke="#82cf95" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Exclusive workshop content</span>
+              </div>
+            </div>
+
+            <div class="checklist-col">
+              <div class="checklist-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8.5l3.5 3.5 6.5-7" stroke="#82cf95" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Career direction framework</span>
+              </div>
+              <div class="checklist-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8.5l3.5 3.5 6.5-7" stroke="#82cf95" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Interview mastery strategy</span>
+              </div>
+              <div class="checklist-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8.5l3.5 3.5 6.5-7" stroke="#82cf95" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Future job guidance</span>
+              </div>
+              <div class="checklist-item">
+                <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8.5l3.5 3.5 6.5-7" stroke="#82cf95" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Certificate of participation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Full Width Reserve My Seat Button -->
+          <div class="offer-action-wrap">
+            <a
+              href="https://workshop.countryedu.com"
+              class="btn btn-primary reserve-seat-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="reserveMySeatBtn"
+            >
+              <span>Reserve My Seat</span>
+              <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3.33 8h9.34M8.67 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Bottom Trust Subtext -->
+          <div class="offer-trust-note">
+            <svg viewBox="0 0 16 16" fill="none" class="trust-icon" aria-hidden="true">
+              <path d="M8 1.5l1.8 3.7 4 .6-2.9 2.9.7 4-3.6-1.9-3.6 1.9.7-4L2.2 5.8l4-.6L8 1.5z" stroke="#82cf95" stroke-width="1.3" fill="rgba(130, 207, 149, 0.2)"/>
+            </svg>
+            <span>Instant Confirmation &bull; Access credentials &amp; exclusive resources delivered immediately via email</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 9: MENTOR OR SPEAKER INTRODUCTION
+         ========================================================= -->
+    <section class="section section-dark" id="speaker">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">FACULTY & GUIDANCE</span>
+          <h2 class="section-title">Learn to Present Your Potential</h2>
+          <div class="gold-line"></div>
+          <p class="section-lead">
+            Gain guidance from experienced talent acquisition leaders and career development advisors dedicated to student success.
+          </p>
+        </div>
+
+        <div class="speaker-profile-card">
+          <div class="speaker-grid">
+            <!-- Speaker Photo / Visual Column -->
+            <div class="speaker-visual-col">
+              <div class="speaker-avatar-frame">
+                <img
+                  src="assets/speaker.jpg"
+                  alt="CountryEdu Keynote Speaker delivering career development presentation on stage"
+                  class="speaker-img"
+                  width="280"
+                  height="350"
+                  loading="lazy"
+                />
+                <div class="speaker-tag-pill">Keynote Speaker</div>
+              </div>
+            </div>
+
+            <!-- Speaker Details Col -->
+            <div class="speaker-bio-col">
+              <div class="speaker-meta">
+                <span class="speaker-badge">Keynote Speaker &bull; In Partnership with CountryEdu</span>
+                <h3 class="speaker-name">Featured Career Mentor &amp; Guest Speaker</h3>
+                <p class="speaker-title">Leadership Coach &amp; Talent Acquisition Strategist</p>
+              </div>
+
+              <div class="speaker-bio-content">
+                <p>
+                  With an extensive track record mentoring undergraduates and emerging professionals, our featured keynote speaker brings direct, stage-tested insights into what hiring committees evaluate when reviewing competitive candidates.
+                </p>
+                <p>
+                  Learn firsthand how to articulate your accomplishments with confidence and bridge academic training with high-impact corporate career opportunities.
+                </p>
+              </div>
+
+              <div class="speaker-pillars-list">
+                <div class="speaker-pill">
+                  <svg viewBox="0 0 16 16" fill="none" class="w-4 h-4" aria-hidden="true">
+                    <circle cx="8" cy="8" r="6" stroke="#82cf95" stroke-width="1.5"/>
+                    <path d="M6 8l1.5 1.5L10 6" stroke="#82cf95" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <span>Talent Evaluation Strategy</span>
+                </div>
+                <div class="speaker-pill">
+                  <svg viewBox="0 0 16 16" fill="none" class="w-4 h-4" aria-hidden="true">
+                    <circle cx="8" cy="8" r="6" stroke="#82cf95" stroke-width="1.5"/>
+                    <path d="M6 8l1.5 1.5L10 6" stroke="#82cf95" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <span>Interview Frameworks</span>
+                </div>
+                <div class="speaker-pill">
+                  <svg viewBox="0 0 16 16" fill="none" class="w-4 h-4" aria-hidden="true">
+                    <circle cx="8" cy="8" r="6" stroke="#82cf95" stroke-width="1.5"/>
+                    <path d="M6 8l1.5 1.5L10 6" stroke="#82cf95" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <span>Executive Presence Coaching</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 10: TESTIMONIALS AND SOCIAL PROOF
+         ========================================================= -->
+    <section class="section section-testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">PARTICIPANT FEEDBACK</span>
+          <h2 class="section-title">Experiences That Inspire Growth</h2>
+          <div class="gold-line"></div>
+          <p class="section-lead">
+            Reflections and learning outcomes from previous CountryEdu career development and skill readiness cohorts.
+          </p>
+        </div>
+
+        <!-- Clearly Marked Testimonial Placeholders -->
+        <div class="grid grid-3 testimonial-grid">
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+            <p class="testimonial-quote">
+              &ldquo;The distinction between just listing coursework and showing business impact changed my entire approach. I received two placement offers within four weeks of adopting the interview frameworks.&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar-placeholder" aria-hidden="true">A.R.</div>
+              <div class="author-meta">
+                <strong class="author-name">[A. R. &bull; Verified Alumni]</strong>
+                <span class="author-role">[Engineering Graduate &bull; Tech Analyst Candidate]</span>
+              </div>
+            </div>
+            <div class="testimonial-notice">
+              <small>[Placeholder review: To be replaced with verified attendee quotes upon post-event clearance]</small>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+            <p class="testimonial-quote">
+              &ldquo;I used to feel intimidated by behavioural questions. The 'Mindset & Growth' breakdown taught me how to talk about failures as learning milestones without losing confidence.&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar-placeholder" aria-hidden="true">P.S.</div>
+              <div class="author-meta">
+                <strong class="author-name">[P. S. &bull; Verified Alumni]</strong>
+                <span class="author-role">[Business Administration Final-Year Student]</span>
+              </div>
+            </div>
+            <div class="testimonial-notice">
+              <small>[Placeholder review: To be replaced with verified attendee quotes upon post-event clearance]</small>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+            <p class="testimonial-quote">
+              &ldquo;CountryEdu's session gave clear, actionable advice that our college curriculum never covered. The 'Culture & Fit' insights helped me understand what hiring managers really evaluate.&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar-placeholder" aria-hidden="true">K.M.</div>
+              <div class="author-meta">
+                <strong class="author-name">[K. M. &bull; Verified Alumni]</strong>
+                <span class="author-role">[Associate Product Consultant]</span>
+              </div>
+            </div>
+            <div class="testimonial-notice">
+              <small>[Placeholder review: To be replaced with verified attendee quotes upon post-event clearance]</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 11: FREQUENTLY ASKED QUESTIONS
+         ========================================================= -->
+    <section class="section section-dark" id="faqs">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">CLARITY & DETAILS</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="gold-line"></div>
+          <p class="section-lead">
+            Everything you need to know about the seminar format, preparation expectations, and participation guidelines.
+          </p>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button
+              class="faq-trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="faq-ans-1"
+              id="faq-btn-1"
+            >
+              <span class="faq-question">Who should attend this seminar?</span>
+              <span class="faq-icon-indicator" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" class="w-5 h-5">
+                  <path d="M10 5v10M5 10h10" stroke="#82cf95" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content" id="faq-ans-1" role="region" aria-labelledby="faq-btn-1" hidden>
+              <p>
+                This seminar is designed specifically for college students, final-year undergraduates, postgraduates, fresh graduates, and early-career job seekers (0–3 years of experience) who want to understand modern recruitment standards and articulate their capabilities with confidence.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button
+              class="faq-trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="faq-ans-2"
+              id="faq-btn-2"
+            >
+              <span class="faq-question">What topics will be covered?</span>
+              <span class="faq-icon-indicator" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" class="w-5 h-5">
+                  <path d="M10 5v10M5 10h10" stroke="#82cf95" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content" id="faq-ans-2" role="region" aria-labelledby="faq-btn-2" hidden>
+              <p>
+                The seminar explores the four core standout pillars: Skills & Potential, Mindset & Growth, Impact & Value, and Culture & Fit. You will also learn practical resume storytelling, interview structuring, STAR behavioural response frameworks, and techniques for articulating project impact.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button
+              class="faq-trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="faq-ans-3"
+              id="faq-btn-3"
+            >
+              <span class="faq-question">How can I prepare for the session?</span>
+              <span class="faq-icon-indicator" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" class="w-5 h-5">
+                  <path d="M10 5v10M5 10h10" stroke="#82cf95" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3" hidden>
+              <p>
+                Have a draft of your latest resume or a list of academic and capstone projects nearby. Prepare 1–2 specific questions regarding interview situations you have found challenging in past recruitment experiences.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button
+              class="faq-trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="faq-ans-4"
+              id="faq-btn-4"
+            >
+              <span class="faq-question">Will I receive learning resources?</span>
+              <span class="faq-icon-indicator" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" class="w-5 h-5">
+                  <path d="M10 5v10M5 10h10" stroke="#82cf95" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content" id="faq-ans-4" role="region" aria-labelledby="faq-btn-4" hidden>
+              <p>
+                Yes. Registered participants receive a downloadable digital copy of &ldquo;The Selection Blueprint Workbook,&rdquo; including resume checklist templates, STAR interview response guides, and self-assessment worksheets.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button
+              class="faq-trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="faq-ans-5"
+              id="faq-btn-5"
+            >
+              <span class="faq-question">How do I register?</span>
+              <span class="faq-icon-indicator" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" class="w-5 h-5">
+                  <path d="M10 5v10M5 10h10" stroke="#82cf95" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content" id="faq-ans-5" role="region" aria-labelledby="faq-btn-5" hidden>
+              <p>
+                Simply complete the registration form in the seminar details section above or click any &ldquo;Register for the Seminar&rdquo; button. Your confirmation and joining link will be issued immediately via email.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button
+              class="faq-trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="faq-ans-6"
+              id="faq-btn-6"
+            >
+              <span class="faq-question">Where can I find event details?</span>
+              <span class="faq-icon-indicator" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" class="w-5 h-5">
+                  <path d="M10 5v10M5 10h10" stroke="#82cf95" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-content" id="faq-ans-6" role="region" aria-labelledby="faq-btn-6" hidden>
+              <p>
+                Event details are summarized on this page and reiterated in your registration confirmation email. Mark your calendar for <strong>24 October 2026</strong>; contact program admissions at CountryEdu if you have any questions regarding this upcoming live cohort.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECTION 12: FINAL CONVERSION SECTION
+         ========================================================= -->
+    <section class="section section-cta-banner">
+      <div class="container">
+        <div class="conversion-panel">
+          <div class="conversion-glow" aria-hidden="true"></div>
+
+          <div class="conversion-content text-center">
+            <span class="conversion-eyebrow">TAKE THE NEXT STEP IN YOUR CAREER</span>
+            <h2 class="conversion-title">Your Potential Deserves to Be Seen.</h2>
+            <div class="gold-line center-gold-line"></div>
+            <p class="conversion-subtext">
+              Prepare to communicate your strengths, demonstrate your value, and approach career opportunities with greater confidence.
+            </p>
+
+            <div class="conversion-cta-row">
+              <a href="#register" class="btn btn-primary btn-lg">
+                <span>Register for the Seminar</span>
+                <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3.33 8h9.34M8.67 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="#learn" class="btn btn-outline btn-lg">
+                <span>Review What You'll Learn</span>
+              </a>
+            </div>
+
+            <div class="conversion-guarantee-note">
+              <span>✦ Complimentary Admission</span>
+              <span>&bull;</span>
+              <span>✦ Dedicated Q&amp;A Session</span>
+              <span>&bull;</span>
+              <span>✦ Digital Career Blueprint Included</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       SECTION 13: FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <!-- Footer Brand Column -->
+      <div class="footer-col footer-col-brand">
+        <a href="#hero" class="brand footer-brand" aria-label="CountryEdu Home">
+          <img
+            src="assets/countryedu-logo.png"
+            alt="CountryEdu - Online Education & Programs"
+            class="brand-logo-img footer-logo-img"
+            width="190"
+            height="42"
+          />
+        </a>
+
+        <p class="footer-desc">
+          CountryEdu empowers students, graduates, and emerging professionals through structured masterclasses, career frameworks, and practical interview readiness.
+        </p>
+
+        <div class="footer-contact-placeholder">
+          <strong>Program Inquiries &amp; Admissions:</strong>
+          <p>[admissions@countryedu.example.com &bull; +1 (800) 555-0199]</p>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col footer-col-links">
+        <h4 class="footer-heading">Seminar Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="#about">Why Selection Matters</a></li>
+          <li><a href="#framework">The 4-Pillar Framework</a></li>
+          <li><a href="#learn">Curriculum &amp; Learning</a></li>
+          <li><a href="#roadmap">5-Stage Career Roadmap</a></li>
+          <li><a href="#speaker">Mentor Guidance</a></li>
+          <li><a href="#faqs">Frequently Asked Questions</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal & Resources -->
+      <div class="footer-col footer-col-legal">
+        <h4 class="footer-heading">Program Policies</h4>
+        <ul class="footer-links-list">
+          <li><a href="#register">Seminar Registration</a></li>
+          <li><a href="#privacy-modal" class="modal-open-link" data-modal="privacy">Privacy Policy</a></li>
+          <li><a href="#terms-modal" class="modal-open-link" data-modal="terms">Terms &amp; Conditions</a></li>
+          <li><a href="#ethics-modal" class="modal-open-link" data-modal="ethics">Academic Integrity</a></li>
+        </ul>
+
+        <div class="footer-badge-box">
+          <small class="badge-title">Upcoming Live Masterclass</small>
+          <p class="badge-note">
+            Event Date: <strong>24 October 2026</strong>.<br />
+            Interactive virtual seminar &bull; Registration open.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sub-footer bar -->
+    <div class="sub-footer">
+      <div class="container sub-footer-inner">
+        <p class="copyright-text">
+          &copy; 2016&ndash;2026 CountryEdu Career Development Programs. All rights reserved.
+        </p>
+        <p class="disclaimer-text">
+          CountryEdu provides educational career guidance. Program outcomes vary based on individual effort and external recruitment conditions.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       MODALS: PRIVACY & TERMS
+       ========================================================= -->
+  <div class="modal-backdrop" id="policyModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Policy Information</h3>
+        <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <p>CountryEdu is committed to protecting participant privacy and maintaining transparent standards.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" id="modalOkBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP 3 and ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main interactive script -->
+  <script src="script.js"></script>
+</body>
+</html>

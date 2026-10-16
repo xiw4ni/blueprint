@@ -2194,6 +2194,16 @@ ul, ol {
   flex-shrink: 0;
 }
 
+.author-avatar-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--gold-primary);
+  object-fit: cover;
+  object-position: center 22%;
+  flex-shrink: 0;
+}
+
 .author-meta {
   display: flex;
   flex-direction: column;
@@ -2266,17 +2276,13 @@ ul, ol {
   .testimonial-set .testimonial-card { width: 320px; }
 }
 
+/* Keep the reviews auto-scrolling (no scrollbar) even when the device has "reduce motion" on.
+   The global reduced-motion rule would otherwise freeze every animation to a single 0.01ms run. */
 @media (prefers-reduced-motion: reduce) {
   .testimonial-track {
-    animation: none !important;
-    transform: none !important;
+    animation-duration: var(--marquee-duration) !important;
+    animation-iteration-count: infinite !important;
   }
-  .testimonial-marquee {
-    overflow-x: auto;
-    -webkit-mask-image: none;
-    mask-image: none;
-  }
-  .testimonial-set[aria-hidden="true"] { display: none; }
 }
 
 

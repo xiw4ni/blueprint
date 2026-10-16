@@ -2216,6 +2216,69 @@ ul, ol {
   color: var(--gold-muted);
 }
 
+/* Infinite reviews marquee: two identical sets, track slides left by exactly one set */
+.testimonial-marquee {
+  --marquee-gap: 1.5rem;
+  --marquee-duration: 70s;
+  position: relative;
+  overflow: hidden;
+  /* full-bleed: span the whole screen even though it sits inside .container */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 0.75rem 0; /* room so the hover lift isn't clipped */
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+}
+
+.testimonial-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: testimonialScroll var(--marquee-duration) linear infinite;
+}
+
+.testimonial-set {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--marquee-gap);
+  padding-right: var(--marquee-gap); /* keeps the seam gap identical to the others */
+}
+
+.testimonial-set .testimonial-card {
+  flex: 0 0 auto;
+  width: 380px;
+  max-width: 86vw;
+}
+
+/* Pause while the pointer is over the cards (or a card has keyboard focus) */
+.testimonial-marquee:hover .testimonial-track,
+.testimonial-marquee:focus-within .testimonial-track {
+  animation-play-state: paused;
+}
+
+@keyframes testimonialScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (max-width: 576px) {
+  .testimonial-marquee { --marquee-gap: 1rem; }
+  .testimonial-set .testimonial-card { width: 320px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-track {
+    animation: none !important;
+    transform: none !important;
+  }
+  .testimonial-marquee {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .testimonial-set[aria-hidden="true"] { display: none; }
+}
+
 
 /* ---------------------------------------------------------
    13. SECTION 11: FREQUENTLY ASKED QUESTIONS
@@ -2982,4 +3045,12 @@ body {
 /* ---- Landscape phones: don't let the open menu overflow ---- */
 @media (max-height: 480px) and (max-width: 991px) {
   .nav-menu { max-height: calc(100vh - var(--nav-height) - var(--ticker-height)); }
+}
+
+/* ---- Phone view: tighter gaps between Modules > Roadmap > Launch Offer > Faculty ---- */
+@media (max-width: 767px) {
+  #learn.section { padding-bottom: 2.25rem; }
+  #roadmap.section { padding-top: 2.25rem; padding-bottom: 2.25rem; }
+  #register.section-details { padding-top: 2.25rem; padding-bottom: 2.25rem; }
+  #speaker.section { padding-top: 2.25rem; }
 }

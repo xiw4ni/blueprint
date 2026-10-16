@@ -706,19 +706,18 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // 6.9 ScrollTrigger: Section 10 — Testimonials
-    const testimonials = document.querySelectorAll(".testimonial-grid .testimonial-card");
-    if (testimonials.length > 0) {
-      gsap.fromTo(testimonials, { y: 40, opacity: 0 }, {
+    // 6.9 ScrollTrigger: Section 10 — Testimonials (infinite reviews marquee)
+    const testimonialMarquee = document.querySelector(".testimonial-marquee");
+    if (testimonialMarquee) {
+      gsap.fromTo(testimonialMarquee, { y: 40, opacity: 0 }, {
         scrollTrigger: {
-          trigger: ".testimonial-grid",
-          start: "top 82%",
+          trigger: testimonialMarquee,
+          start: "top 85%",
           toggleActions: "play none none none"
         },
         y: 0,
         opacity: 1,
         duration: 0.8,
-        stagger: 0.18,
         ease: "power2.out",
         clearProps: "transform,opacity"
       });

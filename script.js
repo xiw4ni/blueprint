@@ -547,13 +547,17 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "-=0.45"
       )
-      .from(
+      // fromTo + explicit end values: .btn has a CSS `transition: all`, which makes a
+      // plain .from() freeze at its start state (buttons stayed invisible on phones)
+      .fromTo(
         ".hero-cta-group .btn",
+        { y: 20, opacity: 0 },
         {
-          y: 20,
-          opacity: 0,
+          y: 0,
+          opacity: 1,
           stagger: 0.18,
-          duration: 0.65
+          duration: 0.65,
+          clearProps: "transform,opacity"
         },
         "-=0.4"
       )
@@ -588,51 +592,56 @@ document.addEventListener("DOMContentLoaded", () => {
     // 6.3 ScrollTrigger: Section 4 — Why Candidate Selection Matters Cards
     const whyCards = document.querySelectorAll(".why-cards .feature-card");
     if (whyCards.length > 0) {
-      gsap.from(whyCards, {
+      gsap.fromTo(whyCards, { y: 45, opacity: 0 }, {
         scrollTrigger: {
           trigger: ".why-cards",
           start: "top 80%",
           toggleActions: "play none none none"
         },
-        y: 45,
-        opacity: 0,
+        y: 0,
+        opacity: 1,
         duration: 0.85,
         stagger: 0.2,
-        ease: "power2.out"
+        ease: "power2.out",
+        clearProps: "transform,opacity"
       });
     }
 
     // 6.4 ScrollTrigger: Section 5 — "What Makes a Candidate Stand Out?" flowchart
     const flowNodes = document.querySelectorAll(".fc-flow .fc-node");
     if (flowNodes.length > 0) {
-      gsap.from(flowNodes, {
+      // fromTo + explicit end values: .fc-node has a CSS transform transition, which made a
+      // plain .from() freeze nodes 36px low so the connector arrows looked misplaced
+      gsap.fromTo(flowNodes, { y: 36, opacity: 0 }, {
         scrollTrigger: {
           trigger: ".fc-flow",
           start: "top 80%",
           toggleActions: "play none none none"
         },
-        y: 36,
-        opacity: 0,
+        y: 0,
+        opacity: 1,
         duration: 0.7,
         stagger: 0.07,
-        ease: "power2.out"
+        ease: "power2.out",
+        clearProps: "transform,opacity"
       });
     }
 
     // 6.5 ScrollTrigger: Section 6 — What You'll Learn Grid
     const learnCards = document.querySelectorAll(".learn-grid .learn-card");
     if (learnCards.length > 0) {
-      gsap.from(learnCards, {
+      gsap.fromTo(learnCards, { y: 40, opacity: 0 }, {
         scrollTrigger: {
           trigger: ".learn-grid",
           start: "top 82%",
           toggleActions: "play none none none"
         },
-        y: 40,
-        opacity: 0,
+        y: 0,
+        opacity: 1,
         duration: 0.75,
         stagger: 0.12,
-        ease: "power2.out"
+        ease: "power2.out",
+        clearProps: "transform,opacity"
       });
     }
 
@@ -700,17 +709,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // 6.9 ScrollTrigger: Section 10 — Testimonials
     const testimonials = document.querySelectorAll(".testimonial-grid .testimonial-card");
     if (testimonials.length > 0) {
-      gsap.from(testimonials, {
+      gsap.fromTo(testimonials, { y: 40, opacity: 0 }, {
         scrollTrigger: {
           trigger: ".testimonial-grid",
           start: "top 82%",
           toggleActions: "play none none none"
         },
-        y: 40,
-        opacity: 0,
+        y: 0,
+        opacity: 1,
         duration: 0.8,
         stagger: 0.18,
-        ease: "power2.out"
+        ease: "power2.out",
+        clearProps: "transform,opacity"
       });
     }
 

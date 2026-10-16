@@ -1,2 +1,7 @@
 .env.local
 theselectionblueprint/
+.vercel
+.env*
+
+.env.local
+blueprint/
